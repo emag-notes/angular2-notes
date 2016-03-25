@@ -76,7 +76,7 @@ interface Hero {
 })
 
 export class AppComponent {
-    title = 'Tour of Heroes';
+  title = 'Tour of Heroes';
   selectedHero:Hero;
   heroes = HEROES;
 
