@@ -5,5 +5,6 @@ https://angular.io/docs/ts/latest/quickstart.html
 ## Usage
 
 ``` sh
-npm install
+$ npm install
+$ npm start
 ```
