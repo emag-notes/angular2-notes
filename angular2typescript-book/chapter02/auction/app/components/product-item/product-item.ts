@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
-import StarsComponent from 'app/components/stars/stars';
-import {Product} from 'app/services/product-service';
+import StarsComponent from '../stars/stars';
+import {Product} from '../../services/product-service';
 
 @Component({
   selector: 'auction-product-item',
