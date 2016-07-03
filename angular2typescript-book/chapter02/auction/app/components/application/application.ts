@@ -22,7 +22,7 @@ import {Product, ProductService} from '../../services/product-service';
     NavbarComponent,
     ProductItemComponent,
     SearchComponent],
-   encapsulation:ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None
 })
 // end::annotation-component[]
 // tag::class[]
