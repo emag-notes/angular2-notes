@@ -7,13 +7,13 @@ import SearchComponent from '../search/search';
 import {Product, ProductService} from '../../services/product-service';
 
 @Component({
-  selector: 'auction-application', // <1>
+  selector: 'auction-application',
   providers: [
-    ProductService // <2>
+    ProductService
   ],
-  templateUrl: 'app/components/application/application.html', // <3>
-  styleUrls: ['app/components/application/application.css'], // <4>
-  directives: [ // <5>
+  templateUrl: 'app/components/application/application.html',
+  styleUrls: ['app/components/application/application.css'],
+  directives: [
     CarouselComponent,
     FooterComponent,
     NavbarComponent,
@@ -22,9 +22,9 @@ import {Product, ProductService} from '../../services/product-service';
   encapsulation: ViewEncapsulation.None
 })
 export default class ApplicationComponent {
-  products: Array<Product> = []; // <1>
+  products: Array<Product> = [];
 
-  constructor(private productService: ProductService) { // <2>
-    this.products = this.productService.getProducts(); // <3>
+  constructor(private productService: ProductService) {
+    this.products = this.productService.getProducts();
   }
 }
