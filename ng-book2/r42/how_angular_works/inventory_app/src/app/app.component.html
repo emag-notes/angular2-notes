@@ -1,4 +1,7 @@
 <div class="inventory-app">
-  <h1>{{ product.name }}</h1>
-  <span>{{ product.sku }}</span>
+  <ul>
+    <li *ngFor="let product of products">
+      {{ product.name }}: {{ product.sku }}
+    </li>
+  </ul>
 </div>
