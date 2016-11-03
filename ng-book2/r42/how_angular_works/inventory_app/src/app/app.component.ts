@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
 
+/**
+ * @AppComponent the top-level component for our application
+ */
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
