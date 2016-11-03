@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Product} from './product/product.model';
 
 /**
  * @AppComponent the top-level component for our application
@@ -9,5 +10,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  product: Product;
+
+  constructor() {
+    this.product = new Product(
+      'NICEHAT',
+      'A Nice Black Hat',
+      '/resources/images/products/black-hat.jpg',
+      ['Men', 'Accessories', 'Hats'],
+      29.99
+    );
+  }
+
 }
